@@ -1,0 +1,128 @@
+.screen {
+  width: 100%;
+}
+
+.screenDetail {
+  padding-top: 6px;
+}
+
+.backButton {
+  border: 0;
+  background: transparent;
+  color: #1f67e5;
+  font-size: 24px;
+  padding: 8px 0 6px;
+}
+
+.detailHero {
+  margin: 6px 0 20px;
+  text-align: center;
+}
+
+.detailHero h1 {
+  color: #0f1013;
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.detailName {
+  margin: 6px 0 0;
+  color: #76767f;
+  font-size: 31px;
+}
+
+.detailDate {
+  margin: 3px 0 0;
+  color: #80818a;
+  font-size: 32px;
+}
+
+.detailCard {
+  background: var(--surface);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detailRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px;
+  color: #14151a;
+  font-size: 18px;
+}
+
+.detailRow::after {
+  content: '';
+  position: absolute;
+  right: 14px;
+  bottom: 0;
+  left: 14px;
+  height: 1px;
+  background: #dddde2;
+}
+
+.detailRow:last-child::after {
+  content: none;
+}
+
+.detailLabel {
+  font-weight: 600;
+}
+
+.detailValue {
+  text-align: right;
+  font-weight: 600;
+}
+
+.detailValueMuted {
+  color: #777983;
+  font-weight: 500;
+}
+
+.statusRow {
+  display: block;
+}
+
+.statusContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.statusLine {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.statusValue {
+  font-weight: 600;
+}
+
+.totalRow {
+  font-size: 32px;
+}
+
+@media (max-width: 420px) {
+  .detailHero h1 {
+    font-size: 20vw;
+  }
+
+  .detailName,
+  .detailDate {
+    font-size: 8.2vw;
+  }
+
+  .detailRow {
+    font-size: 5.2vw;
+  }
+
+  .totalRow {
+    font-size: 8.5vw;
+  }
+}

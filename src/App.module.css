@@ -1,0 +1,14 @@
+.appShell {
+  min-height: 100svh;
+  padding: 14px 12px 20px;
+}
+
+.status {
+  margin: 24px auto;
+  text-align: center;
+  color: var(--muted);
+}
+
+.error {
+  color: #9f2020;
+}

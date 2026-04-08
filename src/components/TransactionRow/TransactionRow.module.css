@@ -1,0 +1,144 @@
+.transactionRow {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #dddde2;
+  background: transparent;
+  padding: 10px 14px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+}
+
+.transactionRow:last-child {
+  border-bottom: 0;
+}
+
+.merchantIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 26px;
+  flex: 0 0 auto;
+}
+
+.tone1 {
+  background: #56575d;
+}
+
+.tone2 {
+  background: #2f3641;
+}
+
+.tone3 {
+  background: #3b3341;
+}
+
+.tone4 {
+  background: #464f59;
+}
+
+.tone5 {
+  background: #323233;
+}
+
+.brandPayment {
+  background: linear-gradient(145deg, #ff9d4d 0%, #f2d235 45%, #7e7dff 100%);
+  color: #ffffff;
+}
+
+.brandIkea {
+  background: #0c5dc8;
+  color: #ffd53b;
+}
+
+.brandTarget {
+  background: #ffffff;
+  color: #e0102b;
+  border: 1px solid #e7e7eb;
+}
+
+.transactionMain {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionHeaderRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.transactionName {
+  color: #17181d;
+  font-size: 22px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.transactionAmount {
+  color: #17181d;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.transactionDescription,
+.transactionMeta {
+  color: #7d7e86;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transactionSide {
+  display: flex;
+  min-width: 68px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  padding-top: 2px;
+}
+
+.transactionArrow {
+  color: #b8b9bf;
+  font-size: 18px;
+}
+
+.cashbackBadge {
+  min-width: 28px;
+  border-radius: 7px;
+  padding: 1px 5px;
+  text-align: center;
+  color: #868790;
+  background: #ebecef;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.cashbackBadge:empty {
+  min-width: 28px;
+  min-height: 16px;
+  background: transparent;
+}
+
+@media (max-width: 420px) {
+  .transactionName {
+    font-size: 8vw;
+  }
+
+  .transactionAmount {
+    font-size: 7vw;
+  }
+
+  .transactionDescription,
+  .transactionMeta {
+    font-size: 5.8vw;
+  }
+}

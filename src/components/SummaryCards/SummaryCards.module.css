@@ -1,0 +1,121 @@
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'balance no-due'
+    'points no-due';
+  gap: 8px;
+}
+
+.summaryCard {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.summaryCard:nth-child(1) {
+  grid-area: balance;
+}
+
+.summaryCard:nth-child(2) {
+  grid-area: no-due;
+}
+
+.summaryCard:nth-child(3) {
+  grid-area: points;
+}
+
+.summaryTitle {
+  color: #1d1d22;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.summaryAmount {
+  margin: 3px 0;
+  font-size: 48px;
+  line-height: 1.02;
+  color: #101014;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.summarySubtext,
+.summaryNote {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.summaryNote {
+  margin-top: 6px;
+}
+
+.noPaymentDue {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.noPaymentTitle {
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.noPaymentText {
+  margin-top: 2px;
+  max-width: 124px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.summaryCheck {
+  margin-top: auto;
+  margin-left: auto;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #e5e6ea;
+  color: #0f1013;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.summaryPoints {
+  margin: 8px 0 0;
+  color: #64656d;
+  font-size: 58px;
+  line-height: 0.92;
+  font-weight: 400;
+}
+
+@media (max-width: 420px) {
+  .summaryTitle {
+    font-size: 7.1vw;
+  }
+
+  .noPaymentTitle {
+    font-size: 5.6vw;
+  }
+
+  .summaryAmount {
+    font-size: 14vw;
+  }
+
+  .summarySubtext,
+  .summaryNote {
+    font-size: 4.4vw;
+  }
+
+  .summaryPoints {
+    font-size: 15vw;
+  }
+
+  .noPaymentText {
+    font-size: 4vw;
+  }
+}

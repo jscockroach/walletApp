@@ -1,0 +1,26 @@
+.screen {
+  width: 100%;
+}
+
+.latestTransactions {
+  margin-top: 16px;
+}
+
+.latestTransactions h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #101014;
+}
+
+.transactionsCard {
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .latestTransactions h2 {
+    font-size: 8vw;
+  }
+}
