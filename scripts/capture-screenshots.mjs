@@ -1,6 +1,6 @@
 import { chromium, devices } from 'playwright'
 
-const APP_URL = 'http://127.0.0.1:4173'
+const APP_URL = process.env.APP_URL ?? 'http://127.0.0.1:4173'
 const iphone = devices['iPhone 12']
 
 const browser = await chromium.launch()
